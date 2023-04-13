@@ -9,12 +9,15 @@
 /* GENERAL */
 body *{
     font-family: 'Open Sans', sans-serif;
-
 }
 
 a{
     text-decoration: none;
     color: #000000;
+}
+
+p{
+    line-height: 1.6rem;
 }
 
 h1{
@@ -31,22 +34,24 @@ h2{
 h3{
     font-size: 1.6rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 h4{
     font-size: 1.4rem;
 }
 
-nav ul li,
-footer ul li{
+ul li{
     list-style-type: none;
+}
+
+main ul li{
+    font-size: .9rem;
 }
 
 .flex{
     display: flex;
     flex-direction: row;
-
 }
 
 button{
@@ -68,6 +73,12 @@ button{
 
 img{
     width: 100%;
+}
+
+hr{
+    width: 10%;
+    color: #cacaca;
+    border-style: solid;
 }
 
 /* -----+-----    HEADER    -----+----- */
@@ -135,7 +146,7 @@ nav li{
 /* -----+-----     MAIN     -----+----- */
 
 #plans{
-    padding: 10rem 0;
+    padding: 10rem 0 5rem;
 }
 
 .plans{
@@ -144,38 +155,144 @@ nav li{
 }
 
 .narrow-plan{
-    width: calc((100% / 3) - 3rem);
+    width: calc((100% / 3) - 2rem);
     border: 1px solid #cacaca;
     margin: 3rem 0;
 }
 
-li .users::before{
-    content: "\f007";
+.plan-type{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #cacaca;
+    text-align: center;
+}
+
+.plan-description{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+div.plan-description h4{
+    margin: .50rem 0;
+}
+
+#plans p{
+    font-size: .9rem;
+    margin: .50rem 0;
+}
+
+.price{
+    font-weight: 700;
+}
+
+.price-basis{
+    font-weight: 300;
+}
+
+#plans ul li{
+    padding-bottom: 1rem;
+    list-style-position: outside;
+}
+
+.plan-size{
+    padding: 2rem 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.btn-plan-container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.btn-plan-container a{
+    text-decoration: underline;
+    color: #0061ff;
+    font-weight: 400;
 }
 
 .btn-plan{
-    width: 80%;
+    width: 100%;
+    padding: .5rem 0;
+    margin-bottom: 2rem;
+}
+
+#plans hr{
+    width: 20%;
+    margin: 3rem 1.2rem;
+}
+
+.more-info{
+    width: 85%;
     margin: 0 auto;
+}
+
+.more-info p{
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+}
+
+.fa-check{
+    color: #0061ff;
 }
 
 .wide-plan{
     width: 100%;
     border: 1px solid #cacaca;
-    height: 50px;
+}
+
+div.wide-plan div.plan-description{
+    width: 70%;
+    padding: 1rem 2rem;
+    margin-top:0;
+}
+
+div.wide-plan div.btn-plan-container{
+    width: 30%;
+    padding: 2rem;
+}
+
+.plan-personalization{
+    padding-top: 3rem;
+}
+
+/* ----------+---- SECTION > PARTNERS ----+---------- */
+#partners{
+    padding: 5rem 0;
+}
+
+
+.img-partner{
+    width: 60%;
+}
+
+.partner-description{
+    width: 40%;
+    padding-top: 3rem;
+    padding-left: 2.7rem;
 }
 
 .btn-partner{
+    margin-top: 3rem;
     background: #ffffff;
     color: #000000;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
+    padding: 0.5rem 1rem;
 }
+
+.btn-partner:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+/* ----------+---- SECTION > OPERATIONS ----+---------- */
 
 .btn-prova{
     background: #ffffff;
     color: #000000;
 }
 
-/* -+- SECTION -> DESIGNIT -+- */
+/* ----------+---- SECTION -> DESIGNIT ----+---------- */
 
 .logos-left,
 .logos-right,
@@ -259,7 +376,6 @@ footer ul li {
 
 .language-selector{
     margin: 1rem 0 0 ;
-    border-top: 1px solid #ffffff;
     color: #999999;
     padding: 3rem 0;
 }
