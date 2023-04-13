@@ -9,6 +9,7 @@
 /* GENERAL */
 body *{
     font-family: 'Open Sans', sans-serif;
+
 }
 
 a{
@@ -22,10 +23,19 @@ h1{
     padding: 4rem 0 3rem;
 }
 
+h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
 h3{
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 2rem;
+}
+
+h4{
+    font-size: 1.4rem;
 }
 
 nav ul li,
@@ -52,7 +62,7 @@ button{
 }
 
 .container-small{
-    width: 52%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -123,6 +133,36 @@ nav li{
 }
 
 /* -----+-----     MAIN     -----+----- */
+
+#plans{
+    padding: 10rem 0;
+}
+
+.plans{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.narrow-plan{
+    width: calc((100% / 3) - 3rem);
+    border: 1px solid #cacaca;
+    margin: 3rem 0;
+}
+
+li .users::before{
+    content: "\f007";
+}
+
+.btn-plan{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wide-plan{
+    width: 100%;
+    border: 1px solid #cacaca;
+    height: 50px;
+}
 
 .btn-partner{
     background: #ffffff;
