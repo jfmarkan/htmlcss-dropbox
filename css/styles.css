@@ -27,7 +27,7 @@ h1{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.75rem;
     margin-bottom: 3rem;
 }
 
@@ -41,6 +41,10 @@ h4{
     font-size: 1.4rem;
 }
 
+h5{
+    font-size: 1rem;
+}
+
 ul li{
     list-style-type: none;
 }
@@ -52,6 +56,10 @@ main ul li{
 .flex{
     display: flex;
     flex-direction: row;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
 button{
@@ -110,6 +118,11 @@ nav li{
     margin: 0 1rem;
 }
 
+.btn-inizia:hover{
+    background-color: #081753;
+    cursor: pointer;
+}
+
 .jumbotron{
     background-color: #b4d0e7;
 }
@@ -127,6 +140,11 @@ nav li{
 .btn-trigger{
     padding: 0.6rem 1rem;
     margin: 1.5rem 0;
+}
+
+.btn-trigger:hover{
+    background-color: #081753;
+    cursor: pointer;
 }
 
 .trigger-actions i{
@@ -217,6 +235,10 @@ div.plan-description h4{
     margin-bottom: 2rem;
 }
 
+.btn-plan:hover{
+    background-color: #081753;
+}
+
 #plans hr{
     width: 20%;
     margin: 3rem 1.2rem;
@@ -261,7 +283,6 @@ div.wide-plan div.btn-plan-container{
     padding: 5rem 0;
 }
 
-
 .img-partner{
     width: 60%;
 }
@@ -287,12 +308,37 @@ div.wide-plan div.btn-plan-container{
 
 /* ----------+---- SECTION > OPERATIONS ----+---------- */
 
-.btn-prova{
-    background: #ffffff;
-    color: #000000;
+#operations{
+    padding: 5rem 0;
 }
 
+#operations .flex{
+    justify-content: space-between;
+}
+
+.cards{
+    width: calc((100% / 3) - 1.45rem);
+    margin-bottom: 4rem;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+/* ----------+---- SECTION > CLIENTS ----+---------- */
+#clients{
+    padding: 5rem 0;
+}
+
+#clients a{
+    text-decoration: underline;
+    color:#0061ff;
+}
+
+
 /* ----------+---- SECTION -> DESIGNIT ----+---------- */
+
+.designit{
+    margin: 5rem 0 0;
+}
 
 .logos-left,
 .logos-right,
@@ -303,13 +349,28 @@ div.wide-plan div.btn-plan-container{
 
 .designit-content{
     background-color: #f5f5f5;
+    padding: 2.5rem;
+}
+
+.designit-content p{
+    padding: 1.5rem 0;
 }
 
 .logos{
     width: 50%;
+    height: calc(100vw / 6);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo-selected{
+    width: 50%;
+}
+
+.designit-content hr{
+    width: 20%;
+    margin: 2rem 0 1rem;
 }
 
 .logos{
@@ -318,11 +379,10 @@ div.wide-plan div.btn-plan-container{
 
 .logos svg{
     width: 60%;
-
 }
 
 .logo-designit{
-        background-color: #a2d39b;
+    background-color: #a2d39b;
     border: solid 1rem #d1e9cd;
 }
 
@@ -355,8 +415,63 @@ div.wide-plan div.btn-plan-container{
     background-color: #ffd830;
 }
 
+
+/* ----------+---- SECTION > TRY IT ----+---------- */
+
+.btn-try{
+    padding: .5rem 3rem;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-try:hover{
+    background-color: #61082b;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+#try-it{
+    background-color: #b4d0e7;
+    padding: 8rem 0;
+    margin-bottom: 5rem;
+}
+
+#try-it .flex{
+    justify-content: space-between;
+}
+
+#try-it h2{
+    color: #61082b;
+    margin-bottom: 0;
+}
+
+.try-it-btn{
+    align-items:  baseline;
+}
+
+/* ----------+---- SECTION > FAQ ----+---------- */
+#faq{
+    padding: 5rem 0;
+}
+
+.question{
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.question:nth-last-of-type(odd){
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.question i{
+    padding: 0 2rem;
+}
+
+
 /* -----+-----    FOOTER    -----+----- */
 footer{
+    margin-top: 5rem;
     background-color: #000000;
     color: #ffffff;
 }
@@ -368,10 +483,6 @@ footer ul li {
 .footer-top{
     justify-content: space-between;
     padding: 5rem 0;;
-}
-
-.footer-bottom{
-
 }
 
 .language-selector{
