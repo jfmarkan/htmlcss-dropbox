@@ -7,8 +7,18 @@
 
 /* STYLES */
 /* GENERAL */
-body{
+body *{
     font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 800;
+    padding: 4rem 0 3rem;
+}
+
+p{
+    margin-bottom: 1rem;
 }
 
 nav ul li,
@@ -19,16 +29,18 @@ footer ul li{
 .flex{
     display: flex;
     flex-direction: row;
+
 }
 
 button{
     border: none;
     background-color: #0061ff;
     color: #ffffff;
+    font-size: 1rem;
 }
 
 .container-big{
-    width: 58%;
+    width: 62%;
     margin: 0 auto;
 }
 
@@ -37,33 +49,62 @@ button{
     margin: 0 auto;
 }
 
+img{
+    width: 100%;
+}
+
 /* HEADER */
 nav{
-    height: 70px;
+    height: 80px;
     background-color: #ffffff;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 500;
     justify-content: space-between;
     align-items: center;
 }
 
-div .logo{
-    width: 100px;
-    padding: 0 0.5rem;;
+div.nav-left,
+div.nav-right{
+    align-items: center;
+}
+
+.logo{
+    width: 145px;
+    padding-left: 1rem;;
 }
 
 nav li{
-    padding-left: 1.5rem;
-}
-
-.jumbotron{
-    background-color: #b4d0e7;
-    height: 100px;
+    padding-left: 3rem;
 }
 
 .btn-inizia{
     padding: 0.35rem 0.7rem;
+    margin: 0 1rem;
 }
+
+.jumbotron{
+    background-color: #b4d0e7;
+}
+
+.trigger-container{
+    position: relative;
+}
+
+.trigger-actions{
+    width: 30%;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.trigger-container-img{
+    position: absolute;
+    left: 30%
+}
+
+.trigger-img{
+    width: 840px;
+}
+
 
 
 
