@@ -46,7 +46,7 @@ h5{
 }
 
 ul li{
-    list-style-type: none;
+    list-style: none;
 }
 
 main ul li{
@@ -209,8 +209,35 @@ div.plan-description h4{
 
 #plans ul li{
     padding-bottom: 1rem;
-    list-style-position: outside;
+    break-inside: auto;
 }
+
+.user::before {
+    font: var(--fa-font-solid);
+    content: "\f007";
+}
+
+.storage::before{
+    font: var(--fa-font-solid);
+    content: "\f07b";
+}
+
+.share::before{
+    font: var(--fa-font-solid);
+    content: "\f1e0";
+}
+
+.users::before{
+    font: var(--fa-font-solid);
+    content: "\f0c0";
+}
+
+.check::before{
+    font: var(--fa-font-solid);
+    content: "\f00c";
+    color: #0061ff;
+}
+
 
 .plan-size{
     padding: 2rem 0;
@@ -419,6 +446,7 @@ div.wide-plan div.btn-plan-container{
 /* ----------+---- SECTION > TRY IT ----+---------- */
 
 .btn-try{
+    margin-top: .6rem;
     padding: .5rem 3rem;
     background-color: #ffffff;
     color: #000000;
