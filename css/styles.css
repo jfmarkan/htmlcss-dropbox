@@ -6,3 +6,74 @@
 }
 
 /* STYLES */
+/* GENERAL */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul li,
+footer ul li{
+    list-style-type: none;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    border: none;
+    background-color: #0061ff;
+    color: #ffffff;
+}
+
+.container-big{
+    width: 58%;
+    margin: 0 auto;
+}
+
+.container-small{
+    width: 52%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+nav{
+    height: 70px;
+    background-color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div .logo{
+    width: 100px;
+    padding: 0 0.5rem;;
+}
+
+nav li{
+    padding-left: 1.5rem;
+}
+
+.jumbotron{
+    background-color: #b4d0e7;
+    height: 100px;
+}
+
+.btn-inizia{
+    padding: 0.35rem 0.7rem;
+}
+
+
+
+.btn-partner{
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.btn-prova{
+    background: #ffffff;
+    color: #000000;
+}
