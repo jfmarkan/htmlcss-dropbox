@@ -1,14 +1,19 @@
-/* RESET */
+/* ----------+----     RESET     ----+---------- */
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* STYLES */
+/* ----------+----     STYLES     ----+---------- */
 /* GENERAL */
 body *{
     font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
 }
 
 h1{
@@ -55,7 +60,7 @@ img{
     width: 100%;
 }
 
-/* HEADER */
+/* -----+-----    HEADER    -----+----- */
 nav{
     height: 80px;
     background-color: #ffffff;
@@ -70,7 +75,7 @@ div.nav-right{
     align-items: center;
 }
 
-.logo{
+.header-logo{
     width: 145px;
     padding-left: 1rem;;
 }
@@ -117,8 +122,7 @@ nav li{
     width: 840px;
 }
 
-/* MAIN */
-
+/* -----+-----     MAIN     -----+----- */
 
 .btn-partner{
     background: #ffffff;
@@ -131,7 +135,70 @@ nav li{
     color: #000000;
 }
 
-/* FOOTER */
+/* -+- SECTION -> DESIGNIT -+- */
+
+.logos-left,
+.logos-right,
+.designit-content{
+    width: calc(100% / 3);
+    flex-wrap: wrap;
+}
+
+.designit-content{
+    background-color: #f5f5f5;
+}
+
+.logos{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos{
+    color: #ffffff;
+}
+
+.logos svg{
+    width: 60%;
+
+}
+
+.logo-designit{
+        background-color: #a2d39b;
+    border: solid 1rem #d1e9cd;
+}
+
+.logo-asu{
+    background-color: #61082b;
+}
+
+.logo-uf{
+    height:auto;
+    background-color: #0093ce;
+}
+
+.logo-topps{
+    background-color: #ff1c1c;
+}
+
+.logo-wbr{
+    background-color: #d5001f;
+}
+
+.logo-hearst{
+    background-color: #b4d0e7;
+}
+
+.logo-lp{
+    background-color: #0d2481;
+}
+
+.logo-cc{
+    background-color: #ffd830;
+}
+
+/* -----+-----    FOOTER    -----+----- */
 footer{
     background-color: #000000;
     color: #ffffff;
