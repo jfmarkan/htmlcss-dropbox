@@ -408,12 +408,10 @@ div.wide-plan div.btn-plan-container{
     margin: 2rem 0 1rem;
 }
 
-.logos{
+.logos img{
+    width: 50%;
+    filter: invert();
     color: #ffffff;
-}
-
-.logos svg{
-    width: 60%;
 }
 
 .logo-designit{
