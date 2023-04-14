@@ -207,9 +207,12 @@ div.plan-description h4{
     font-weight: 300;
 }
 
+#plans ul{
+
+}
+
 #plans ul li{
     padding-bottom: 1rem;
-    break-inside: auto;
 }
 
 .user::before {
