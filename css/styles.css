@@ -149,7 +149,7 @@ nav li{
 
 .trigger-actions i{
     font-size: 4rem;
-    padding: 4rem 0 1.5rem;
+    padding: 3.5rem 0 1rem;
 }
 
 .trigger-container-img{
@@ -158,13 +158,17 @@ nav li{
 }
 
 .trigger-img{
-    width: 840px;
+    width: 100%;
 }
 
 /* -----+-----     MAIN     -----+----- */
 
 #plans{
     padding: 10rem 0 5rem;
+}
+
+#plans input{
+    margin: 0 1rem;
 }
 
 .plans{
@@ -207,12 +211,9 @@ div.plan-description h4{
     font-weight: 300;
 }
 
-#plans ul{
-
-}
-
 #plans ul li{
-    padding-bottom: 1rem;
+    padding: 0 1rem 1rem;
+    text-indent: -1.2em;
 }
 
 .user::before {
@@ -488,6 +489,7 @@ div.wide-plan div.btn-plan-container{
 .question{
     justify-content: space-between;
     padding: 2rem 0;
+    flex-wrap: wrap;
 }
 
 .question:nth-last-of-type(odd){
@@ -498,7 +500,6 @@ div.wide-plan div.btn-plan-container{
 .question i{
     padding: 0 2rem;
 }
-
 
 /* -----+-----    FOOTER    -----+----- */
 footer{
