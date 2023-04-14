@@ -168,7 +168,11 @@ nav li{
 }
 
 #plans input{
-    margin: 0 1rem;
+    margin: 0 .5rem 0 0;
+}
+
+input#annuale{
+    margin-left: 2rem;
 }
 
 .plans{
