@@ -393,7 +393,7 @@ div.wide-plan div.btn-plan-container{
 
 .logos{
     width: 50%;
-    height: calc(100vw / 6);
+    min-height: calc(100vw / 6);
     display: flex;
     justify-content: center;
     align-items: center;
